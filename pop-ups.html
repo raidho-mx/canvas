@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|PT+Serif:400,700" rel="stylesheet">
@@ -11,51 +12,381 @@
 </head>
 <body>
 
-<div class="add-hypothesis">
-	<button class="white-close-btn"></button>
-	<div class="one-col bg-cyan p24 c-white pr70">
-		<h3 class="serif c-white mb20">New Hypothesis</h3>
-		<input type="text" placeholder="Write a short hypotesis">
-	</div>
-	<div class="one-col bg-white p24">
-		<div class="one-col columns">
-			<div class="two-col mb20">
-				<label class="c-dark-purple bold-serif">Canvas Area</label>
-				<select class="input-x1">
-					<option value="first">Value Proposition</option>
-				</select>
-			</div>
+<!-- ADD HYPOTHESIS SINGLE MODAL -->
+<div class="one-col mb50">
+	<div class="add-hypothesis">
+		<button class="bg-white-close-btn"></button>
+		<div class="one-col bg-cyan p24 c-white pr70">
+			<h3 class="serif c-white mb20">New Hypothesis</h3>
+			<input type="text" placeholder="Write a short hypotesis">
 		</div>
-		<div class="one-col">
-			<div class="two-col columns">
-				<div class="mb20">
-					<label class="c-dark-purple bold-serif">Color Tags</label>
-					<input class="input-x1 bg-light-blue" type="text" placeholder="Money, Admin, …">
+		<div class="one-col bg-white p24">
+			<div class="one-col">
+				<div class="two-col mb20">
+					<label class="c-dark-purple bold-serif">Canvas Area</label>
+					<select class="input-x1">
+						<option value="first">Value Proposition</option>
+					</select>
 				</div>
 			</div>
-			<div class="two-col">
-				<ul class="color-picker-list">
-					<li><button class="bg-orange"></button></li>
-					<li><button class="bg-purple"></button></li>
-					<li><button class="bg-red"></button></li>
-					<li><button class="bg-green"></button></li>
-					<li><button class="bg-blue"></button></li>
-					<li><button class="bg-yellow"></button></li>
-					<li><button class="bg-light-blue"></button></li>
-					<li><button class="bg-soft-green"></button></li>
-				</ul>
+			<div class="one-col">
+				<div class="two-col columns">
+					<div class="mb20">
+						<label class="c-dark-purple bold-serif">Color Tags</label>
+						<input class="input-x1 bg-light-blue" type="text" placeholder="Money, Admin, …">
+					</div>
+				</div>
+				<div class="two-col">
+					<ul class="color-picker-list">
+						<li><button class="bg-orange"></button></li>
+						<li><button class="bg-purple"></button></li>
+						<li><button class="bg-red"></button></li>
+						<li><button class="bg-green"></button></li>
+						<li><button class="bg-blue"></button></li>
+						<li><button class="bg-yellow"></button></li>
+						<li><button class="bg-light-blue"></button></li>
+						<li><button class="bg-soft-green"></button></li>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<div class="one-col">
-			<div class="two-col">
-				<button class="blue-btn">Save Hypotesis</button>
-			</div>
-			<div class="two-col">
-				<button class="dark-purple-opacity-btn">Discard Hypotesis</button>
+			<div class="one-col">
+				<div class="two-col">
+					<button class="blue-btn">Save Hypotesis</button>
+				</div>
+				<div class="two-col">
+					<button class="dark-purple-opacity-btn p-btn">Discard Hypotesis</button>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<!-- NEW HYPOTHESIS MODAL -->
+<div class="one-col mb50">
+	<div class="hypothesis-modal">
+		<button class="gray-close-btn"></button>
+		<div class="half-col">
+			<div class="one-col p24 mb20">
+				<div class="half-col right-gutter">
+					<select class="input-x1">
+						<option value="first">Value Proposition</option>
+					</select>
+				</div>
+				<div class="half-col">
+					<select class="input-x1">
+						<option value="first">Week 1</option>
+					</select>
+				</div>
+			</div>
+			<div class="one-col p24">
+				<div class="new-hypotesis-modal">
+					<button class="gray-close-btn"></button>
+					<div class="one-col right-gutter">
+						<div class="mb20">
+							<label class="c-dark-purple bold-sans-serif">New Hypothesis</label>
+							<input class="input-x1" type="text" placeholder="Write a short hypothesis">
+						</div>
+					</div>
+					<div class="one-col mb20">
+						<div class="half-col right-gutter">
+							<div class="mb20">
+								<label class="c-dark-purple bold-sans-serif">Color Tags</label>
+								<input class="input-x1 bg-light-blue" type="text" placeholder="Money, Admin, …">
+							</div>
+						</div>
+						<div class="half-col">
+							<ul class="color-picker-list">
+								<li><button class="bg-orange"></button></li>
+								<li><button class="bg-purple"></button></li>
+								<li><button class="bg-red"></button></li>
+								<li><button class="bg-green"></button></li>
+								<li><button class="bg-blue"></button></li>
+								<li><button class="bg-yellow"></button></li>
+								<li><button class="bg-light-blue"></button></li>
+								<li><button class="bg-soft-green"></button></li>
+							</ul>
+						</div>
+					</div>
+					<button class="gray-border-btn c-center">Save Hypotesis</button>
+				</div>
+			</div>
+			<button class="dark-purple-opacity-btn f-left p24 txt14">View valid hypothesis</button>
+		</div>
+		<div class="half-col bg-green">
+			<div class="one-col p24 mb20">
+				<ul class="specs-tabs">
+					<li><button class="white-border-small-btn">Key Insights</button></li>
+					<li><button class="white-border-small-btn">Deep Dive</button></li>
+					<li><button class="white-border-small-btn chat-btn">12</button></li>
+					<li><button class="white-border-small-btn">Help</button></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- NEW HYPOTHESIS MODAL -->
+<div class="one-col mb50">
+	<div class="hypothesis-modal">
+		<button class="gray-close-btn"></button>
+		<div class="half-col">
+			<div class="one-col p24">
+				<div class="half-col right-gutter">
+					<select class="input-x1">
+						<option value="first">Value Proposition</option>
+					</select>
+				</div>
+				<div class="half-col">
+					<select class="input-x1">
+						<option value="first">Week 1</option>
+					</select>
+				</div>
+			</div>
+			<div class="one-col ptrl24">
+				<div class="hypothesis-wrap scroll-content">
+					<button class="remove-gray-btn mb20">
+						<div class="gray-close-btn"></div><p class="c-dark-purple">Improves Pet’s Health</p><p class="c-green txt12">Valid by 1 Insight</p>
+					</button>
+					<button class="remove-gray-btn mb20">
+						<div class="gray-close-btn"></div><p class="c-dark-purple">Comfort & Time Saver</p><p class="c-dark-purple-opacity txt12">Not yet Valid</p>
+					</button>
+					<button class="dashed-gray-btn c-cyan mb20"> <div class="bg-blue-add-btn m-right">+</div>Add New Hypothesis</button>
+				</div>
+			</div>
+			<button class="dark-purple-opacity-btn f-left p24 txt14">View valid hypothesis</button>
+		</div>
+		<div class="half-col bg-green">
+			<div class="one-col p24">
+				<ul class="specs-tabs">
+					<li><button class="white-border-small-btn active">Key Insights</button></li>
+					<li><button class="white-border-small-btn">Deep Dive</button></li>
+					<li><button class="white-border-small-btn chat-btn">12</button></li>
+					<li><button class="white-border-small-btn">Help</button></li>
+				</ul>
+			</div>
+			<div class="one-col ptrl24 mb20">
+				<div class="hypothesis-specs scroll-content">
+					<div class="specs-wrap">
+						<div class="hypothesis-comment mb20">
+							<div class="status">
+								<button class="small-rounded-btn bg-green">must</button>
+							</div>
+							<div class="message">
+								<p class="c-dark-purple"><strong>“Clients value their pet’s health the most”</strong></p>
+								<div class="author">
+									<div class="profile" style="background-image: url('img/profile1.png');"></div>
+									<p class="txt12">Found by <strong>Jessica</strong> from the interview with <strong>Inés Cruz</strong> on <strong>Jan 31, 2017</strong></p>
+								</div>
+							</div>
+						</div>
+						<div class="hypothesis-comment mb20">
+							<div class="status">
+								<button class="small-rounded-btn bg-green inactive">nice</button>
+							</div>
+							<div class="message">
+								<p class="c-dark-purple"><strong>“Clients value their pet’s health the most”</strong></p>
+								<div class="author">
+									<div class="profile" style="background-image: url('img/profile1.png');"></div>
+									<p class="txt12">Found by Jessica from the interview with Inés Cruz on Jan 31, 2017</p>
+								</div>
+							</div>
+						</div>
+						<button class="dashed-gray-btn mb20" name="button"> <div class="bg-gray-add-btn m-right">+</div>Add New Insight</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- NEW HYPOTHESIS CHAT MODAL -->
+<div class="one-col mb50">
+	<div class="hypothesis-modal">
+		<button class="gray-close-btn"></button>
+		<div class="half-col">
+			<div class="one-col p24">
+				<div class="half-col right-gutter">
+					<select class="input-x1">
+						<option value="first">Value Proposition</option>
+					</select>
+				</div>
+				<div class="half-col">
+					<select class="input-x1">
+						<option value="first">Week 1</option>
+					</select>
+				</div>
+			</div>
+			<div class="one-col ptrl24">
+				<div class="hypothesis-wrap scroll-content">
+					<button class="remove-gray-btn mb20">
+						<div class="gray-close-btn"></div><p class="c-dark-purple">Improves Pet’s Health</p><p class="c-green txt12">Valid by 1 Insight</p>
+					</button>
+					<button class="remove-gray-btn mb20">
+						<div class="gray-close-btn"></div><p class="c-dark-purple">Comfort & Time Saver</p><p class="c-dark-purple-opacity txt12">Not yet Valid</p>
+					</button>
+					<button class="dashed-gray-btn c-cyan mb20"> <div class="bg-blue-add-btn m-right">+</div>Add New Hypothesis</button>
+				</div>
+			</div>
+			<button class="dark-purple-opacity-btn f-left p24 txt14">View valid hypothesis</button>
+		</div>
+		<div class="half-col bg-cyan">
+			<div class="one-col p24">
+				<ul class="specs-tabs">
+					<li><button class="white-border-small-btn">Key Insights</button></li>
+					<li><button class="white-border-small-btn">Deep Dive</button></li>
+					<li><button class="white-border-small-btn chat-btn active">12</button></li>
+					<li><button class="white-border-small-btn">Help</button></li>
+				</ul>
+			</div>
+			<div class="one-col mb20">
+				<div class="hypothesis-chat-wrap plr24 scroll-content">
+					<div class="hypothesis-chat">
+						<div class="hypothesis-comment ltr mb30">
+							<div class="message">
+								<p class="c-cyan serif">I need to dive deeper in this topic; I have a sense that I’m on the right way but need to conduct more interviews</p>
+								<div class="author">
+									<div class="profile" style="background-image: url('img/profile1.png');"></div>
+									<p class="txt14">by <strong>Linda</strong> at 12:23pm on Jan 26, 2017</p>
+								</div>
+							</div>
+						</div>
+						<div class="hypothesis-comment rtl mb30">
+							<div class="message">
+								<p class="c-cyan serif">Donec ac efficitur purus. Donec volutpat sapien id cursus rutrum. Suspendisse in fermentum elit. Suspendisse in fermentum elit. Aliquam eleifend.</p>
+								<div class="author">
+									<div class="profile" style="background-image: url('img/profile1.png');"></div>
+									<p class="txt14">by <strong>You</strong> at 12:23pm on Jan 26, 2017</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="add-comment plr24">
+					<textarea class="textarea-input" placeholder="Add your comment"></textarea>
+					<input type="submit" class="submit-input">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- NEW HYPOTHESIS DEEP DIVE MODAL -->
+<div class="one-col mb50">
+	<div class="hypothesis-modal">
+		<button class="gray-close-btn"></button>
+		<div class="half-col">
+			<div class="one-col p24">
+				<div class="half-col right-gutter">
+					<select class="input-x1">
+						<option value="first">Value Proposition</option>
+					</select>
+				</div>
+				<div class="half-col">
+					<select class="input-x1">
+						<option value="first">Week 1</option>
+					</select>
+				</div>
+			</div>
+			<div class="one-col ptrl24">
+				<div class="hypothesis-wrap scroll-content">
+					<button class="remove-gray-btn active mb20">
+						<div class="gray-close-btn"></div><p class="c-dark-purple">Improves Pet’s Health</p><p class="c-green txt12">Valid by 1 Insight</p>
+					</button>
+					<button class="remove-gray-btn mb20">
+						<div class="gray-close-btn"></div><p class="c-dark-purple">Comfort & Time Saver</p><p class="c-dark-purple-opacity txt12">Not yet Valid</p>
+					</button>
+					<button class="dashed-gray-btn c-cyan mb20"> <div class="bg-blue-add-btn m-right">+</div>Add New Hypothesis</button>
+				</div>
+			</div>
+			<button class="dark-purple-opacity-btn f-left p24 txt14">View valid hypothesis</button>
+		</div>
+		<div class="half-col bg-dark-purple">
+			<div class="one-col p24">
+				<ul class="specs-tabs">
+					<li><button class="white-border-small-btn">Key Insights</button></li>
+					<li><button class="white-border-small-btn active">Deep Dive</button></li>
+					<li><button class="white-border-small-btn chat-btn">12</button></li>
+					<li><button class="white-border-small-btn">Help</button></li>
+				</ul>
+			</div>
+			<div class="one-col p24">
+				<div class="hypothesis-specs">
+					<p class="c-white mb20">Answer some simple questions and power up your hypothesis, it’ll take you 10 min 😉</p>
+					<button class="green-btn">Start</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- NEW HYPOTHESIS DEEP DIVE MODAL -->
+<div class="one-col mb50">
+	<div class="hypothesis-modal">
+		<button class="gray-close-btn"></button>
+		<div class="half-col">
+			<div class="one-col p24">
+				<div class="half-col right-gutter">
+					<select class="input-x1">
+						<option value="first">Value Proposition</option>
+					</select>
+				</div>
+				<div class="half-col">
+					<select class="input-x1">
+						<option value="first">Week 1</option>
+					</select>
+				</div>
+			</div>
+			<div class="one-col plr24">
+				<div class="hypothesis-specs scroll-content">
+					<div class="one-col mb20">
+						<img src="img/video-placeholder.png" alt="">
+						<p class="c-dark-purple"><strong>The Value Proposition Canvas Explained</strong></p>
+					</div>
+				</div>
+			</div>
+			<button class="dark-purple-opacity-btn f-left p24 txt14">View valid hypothesis</button>
+		</div>
+		<div class="half-col bg-soft-orange">
+			<div class="one-col p24">
+				<ul class="specs-tabs">
+					<li><button class="white-border-small-btn">Key Insights</button></li>
+					<li><button class="white-border-small-btn">Deep Dive</button></li>
+					<li><button class="white-border-small-btn chat-btn">12</button></li>
+					<li><button class="white-border-small-btn active">Help</button></li>
+				</ul>
+			</div>
+			<div class="one-col plr24 mb20">
+				<div class="hypothesis-specs scroll-content">
+					<div class="txt-content">
+						<p class="c-dark-purple mb20">Keep in mind these guidelines to fill your Value Proposition:</p>
+						<ul>
+							<li>ExExplain how does your product or service solves your customer’s issues, or improves his/her situation (relevance)</li>
+							<li>Cleraly specify a benefit (value)</li>
+							<li>Let the customer know why should he/she choose you and not your competitors (differentiate)</li>
+						</ul>
+						<ul>
+							<li>ExExplain how does your product or service solves your customer’s issues, or improves his/her situation (relevance)</li>
+							<li>Cleraly specify a benefit (value)</li>
+							<li>Let the customer know why should he/she choose you and not your competitors (differentiate)</li>
+						</ul>
+						<ul>
+							<li>ExExplain how does your product or service solves your customer’s issues, or improves his/her situation (relevance)</li>
+							<li>Cleraly specify a benefit (value)</li>
+							<li>Let the customer know why should he/she choose you and not your competitors (differentiate)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- LIBRARIES -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.min.js"></script>
+<script src="js/scripts.js"></script>
 
 </body>
 </html>
