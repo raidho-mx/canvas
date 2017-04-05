@@ -20,3 +20,5 @@ Login: http://testbed.raidho.mx/canvas/login.html
 Sign Up: http://testbed.raidho.mx/canvas/sign-up.html
 
 Add hypothesis (Provisional): http://testbed.raidho.mx/canvas/pop-ups.html
+
+Canvas Grid http://testbed.raidho.mx/canvas/dashboard.html
