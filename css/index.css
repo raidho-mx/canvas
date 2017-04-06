@@ -56,10 +56,14 @@
 .c-light-purple {
   color: #E8E5FF; }
 
+html {
+  height: 100%; }
+
 body {
   color: #000000;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  height: 100%;
   line-height: 1.5em; }
 
 b, strong {
@@ -85,6 +89,10 @@ h2 {
 
 h3 {
   font-size: 1.25em; }
+
+.main-content {
+  min-height: 100%;
+  position: relative; }
 
 .txt14 {
   font-size: 0.875em;
@@ -338,7 +346,7 @@ input[type="submit"].login-btn {
 
 /*GRID */
 section {
-  float: left;
+  display: inline-block;
   position: relative;
   width: 100%; }
 
@@ -939,7 +947,7 @@ section {
   .progress-bar .bg-green {
     height: 26px;
     float: left;
-    box-shadow: 0 0 1em rgba(50, 213, 154, 0.4);
+    box-shadow: 0 0 6px rgba(50, 213, 154, 0.4);
     background-color: #11C26F; }
   .progress-bar .bg-transparent {
     float: left;
@@ -947,12 +955,12 @@ section {
     background-color: transparent; }
   .progress-bar .bg-red {
     float: left;
-    box-shadow: 0 0 1em rgba(252, 3, 94, 0.4);
-    background-color: #E95454;
+    box-shadow: 0 0 6px rgba(252, 3, 94, 0.4);
+    background-color: #FC035E;
     height: 26px; }
   .progress-bar .bg-blue {
     float: left;
-    box-shadow: 0 0 1em rgba(0, 159, 255, 0.4);
+    box-shadow: 0 0 6px rgba(0, 159, 255, 0.4);
     background-color: #009FFF;
     height: 26px; }
 
@@ -1009,7 +1017,10 @@ footer {
   color: #FFFFFF;
   float: left;
   width: 100%;
-  padding: 1.875em 0; }
+  padding: 1.875em 0;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
   footer .three-col, footer .third-col {
     float: left; }
   @media (min-width: 800px) {
@@ -1373,6 +1384,7 @@ ul.color-picker-list {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 2.5em;
+  position: relative;
   width: 257px; }
   .canvas-progress-assistant .to-do {
     color: #29244E;

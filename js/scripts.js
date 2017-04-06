@@ -8,8 +8,8 @@ if(windowWidth > 768){
 
 // CIRCLE PROGRESS BAR: DRAW GREEN LINE
 $(".circle-progress-bar").each(function(){
-	var val = parseInt($(this).find('#number').text());
-	var $circle = $(this).find('#svg #bar');
+	var val = parseInt($('#number').text());
+	var $circle = $('#svg #bar');
 	if (isNaN(val)) {
 		val = 100;
 	}
@@ -26,4 +26,11 @@ $(".circle-progress-bar").each(function(){
 
 		$('#cont').attr('data-pct',val);
 	}
+});
+
+
+// FIX FOOTER TO BOTTOM: ADD PADDING ON .MAIN-CONTENT
+$(window).resize(function() {
+	var footerHeight = $('footer').outerHeight();
+	$('.main-content').css({'padding-bottom' : footerHeight});
 });
