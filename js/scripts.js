@@ -34,3 +34,17 @@ $(window).resize(function() {
 	var footerHeight = $('footer').outerHeight();
 	$('.main-content').css({'padding-bottom' : footerHeight});
 });
+
+
+// SHOW ASSITANT STATUS
+$('.trigger-assistant-status .question-mark-btn').click(function(){
+	$('.canvas-progress-assistant').addClass('show');
+	$('.canvas-grid').addClass('show');
+	$('.trigger-assistant-status').addClass('hide');
+});
+
+$('.canvas-progress-assistant .question-mark-btn').click(function(){
+	$('.canvas-progress-assistant').removeClass('show');
+	$('.canvas-grid').removeClass('show');
+	$('.trigger-assistant-status').removeClass('hide');
+});

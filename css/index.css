@@ -95,16 +95,16 @@ h3 {
   position: relative; }
 
 .txt14 {
-  font-size: 0.875em;
-  line-height: 1.25em; }
+  font-size: 14px;
+  line-height: 20px; }
 
 .txt12 {
-  font-size: 0.75em;
-  line-height: 1.25em; }
+  font-size: 12px;
+  line-height: 20px; }
 
 .txt10 {
-  font-size: 0.65em;
-  line-height: 1.25em; }
+  font-size: 10px;
+  line-height: 20px; }
 
 .sans-serif {
   font-family: "Open Sans", sans-serif; }
@@ -127,6 +127,10 @@ h3 {
   color: #FEFF7C;
   font-size: 0.875em;
   line-height: 1.25em; }
+
+@media (min-width: 800px) {
+  .overflow-hidden {
+    overflow: hidden; } }
 
 .shadow {
   -moz-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
@@ -1023,7 +1027,19 @@ footer {
   left: 0; }
   footer .three-col, footer .third-col {
     float: left; }
+  @media (max-width: 800px) {
+    footer {
+      text-align: center; }
+      footer button {
+        margin: 0 auto;
+        display: block; }
+      footer .table, footer .table-cell {
+        width: 100%; }
+      footer .table-cell {
+        padding-bottom: 20px; } }
   @media (min-width: 800px) {
+    footer .progress-bar-wrap {
+      padding-top: 20px; }
     footer .pr-100 {
       padding-right: 6.25em; } }
 
@@ -1242,10 +1258,15 @@ ul.color-picker-list {
 .canvas-grid {
   width: 100%;
   display: inline-block;
-  margin-bottom: 2.5em;
+  margin-bottom: 40px;
+  font-size: 0;
   position: relative;
   color: rgba(41, 36, 78, 0.4);
-  border: 1px solid #F0F0F0; }
+  border: 1px solid #F0F0F0;
+  -moz-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s; }
   .canvas-grid .bg-blue-add-btn {
     -moz-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
@@ -1261,6 +1282,7 @@ ul.color-picker-list {
     -webkit-box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.5);
     color: #FFFFFF;
+    font-size: 16px;
     border: 4px solid #009FFF;
     height: 100%;
     position: absolute;
@@ -1286,14 +1308,14 @@ ul.color-picker-list {
   .canvas-grid .cell {
     position: relative;
     border: 1px solid #F0F0F0;
-    height: 176px;
+    height: auto;
     width: 100%; }
   .canvas-grid .cell .dashed-blue-btn {
     margin: 0 auto;
     width: 90%;
     display: block;
     font-size: 12px;
-    opacity: 0;
+    opacity: 1;
     -moz-transition: ease 0.3s;
     -o-transition: ease 0.3s;
     -webkit-transition: ease 0.3s;
@@ -1314,7 +1336,8 @@ ul.color-picker-list {
     padding: 10px;
     margin-bottom: 1.25em; }
   .canvas-grid .cell .bottom {
-    height: 105px; }
+    height: auto;
+    padding-bottom: 20px; }
   .canvas-grid .cell .count {
     color: rgba(41, 36, 78, 0.4);
     position: absolute;
@@ -1367,29 +1390,71 @@ ul.color-picker-list {
     background-color: #6BC7FF; }
   @media (min-width: 800px) {
     .canvas-grid {
-      height: 530px;
-      width: 827px; }
+      width: 90%;
+      height: 530px; }
       .canvas-grid .cell {
-        width: 165px; }
+        width: 100%;
+        height: 176px; }
       .canvas-grid .horizontal-x2 {
-        width: 412.5px; }
+        width: 100%; }
       .canvas-grid .col {
-        width: auto; }
+        width: 20%; }
+      .canvas-grid .col-vertical {
+        width: 50%; }
+      .canvas-grid .cell .bottom {
+        height: 105px;
+        padding-bottom: 0; }
       .canvas-grid .col-x2 .cell .bottom {
         height: 280px; }
       .canvas-grid .col-x2, .canvas-grid .col-x2 .cell {
-        height: 352px; } }
+        height: 352px; }
+      .canvas-grid .cell .dashed-blue-btn {
+        opacity: 0; } }
+  @media (min-width: 1224px) {
+    .canvas-grid {
+      width: 827px; } }
+
+.trigger-assistant-status {
+  width: 9%;
+  padding-left: 20px;
+  vertical-align: top;
+  -moz-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s; }
+  .trigger-assistant-status button {
+    display: block; }
+  @media (min-width: 1224px) {
+    .trigger-assistant-status {
+      display: none; } }
+  @media (max-width: 1224px) {
+    .trigger-assistant-status {
+      display: inline-block; } }
+  @media (max-width: 800px) {
+    .trigger-assistant-status {
+      display: none; } }
+
+.trigger-assistant-status.hide {
+  opacity: 0;
+  display: none;
+  overflow: hidden;
+  visibility: hidden; }
 
 .canvas-progress-assistant {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 2.5em;
   position: relative;
-  width: 257px; }
+  width: 100%;
+  -moz-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s; }
   .canvas-progress-assistant .to-do {
     color: #29244E;
     position: relative;
     padding-left: 54px;
+    font-size: 14px;
     padding-bottom: 15px;
     padding-top: 15px;
     border-bottom: 2px solid #F0F0F0; }
@@ -1429,4 +1494,46 @@ ul.color-picker-list {
     background: #FEFF7C; }
   @media (min-width: 800px) {
     .canvas-progress-assistant {
-      padding-left: 25px; } }
+      position: absolute;
+      opacity: 0;
+      right: -200px;
+      display: inline-block;
+      width: 25%;
+      padding-left: 25px;
+      visibility: hidden;
+      overflow: hidden; }
+      .canvas-progress-assistant .top {
+        margin-bottom: 0; } }
+  @media (min-width: 1224px) {
+    .canvas-progress-assistant {
+      opacity: 1;
+      position: relative;
+      display: inline-block;
+      visibility: visible;
+      right: inherit;
+      overflow: auto;
+      width: 257px; }
+      .canvas-progress-assistant .top {
+        margin-bottom: 1.5em; }
+      .canvas-progress-assistant .to-do {
+        font-size: 16px; } }
+
+@media (min-width: 800px) {
+  .canvas-grid.show {
+    width: 74%;
+    -moz-transition: ease 0.3s;
+    -o-transition: ease 0.3s;
+    -webkit-transition: ease 0.3s;
+    transition: ease 0.3s; }
+
+  .canvas-progress-assistant.show {
+    right: 0;
+    opacity: 1;
+    position: absolute;
+    display: inline-block !important;
+    visibility: visible;
+    overflow: auto;
+    -moz-transition: ease 0.3s;
+    -o-transition: ease 0.3s;
+    -webkit-transition: ease 0.3s;
+    transition: ease 0.3s; } }
