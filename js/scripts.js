@@ -6,6 +6,14 @@ if(windowWidth > 768){
 	});
 }
 
+//CUSTOM SCROLL WHITE VERSION
+var windowWidth = $(window).width();
+if(windowWidth > 768){
+	$(".scroll-content-white").mCustomScrollbar({
+		theme:"light-2"
+	});
+}
+
 // CIRCLE PROGRESS BAR: DRAW GREEN LINE
 $(".circle-progress-bar").each(function(){
 	var val = parseInt($('#number').text());
