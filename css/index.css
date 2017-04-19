@@ -29,6 +29,9 @@
 .bg-dark-purple {
   background-color: #29244E; }
 
+.bg-dark-purple-opacity8 {
+  background-color: rgba(41, 36, 78, 0.8); }
+
 .bg-cyan {
   background-color: #009FFF; }
 
@@ -471,21 +474,12 @@ section {
     .two-col {
       width: 50%; } }
 
-.half-col {
-  float: left;
-  position: relative;
-  vertical-align: top;
-  width: 50%; }
-
 .third-col {
   position: relative;
   width: 100%; }
   @media (min-width: 800px) {
     .third-col {
       width: 33%; } }
-
-.right-gutter {
-  padding-right: 1.25em; }
 
 .one-third {
   display: inline-block;
@@ -495,6 +489,37 @@ section {
   @media (min-width: 800px) {
     .one-third {
       width: 32%; } }
+
+.half-col {
+  float: left;
+  position: relative;
+  vertical-align: top;
+  width: 50%; }
+
+.one-third-col {
+  float: left;
+  position: relative;
+  vertical-align: top;
+  width: 33.33%; }
+
+.two-third-col {
+  float: left;
+  position: relative;
+  vertical-align: top;
+  width: 66.66%; }
+
+.odd-half-col {
+  position: relative;
+  vertical-align: top;
+  width: 57%; }
+
+.odd-third-col {
+  position: relative;
+  vertical-align: top;
+  width: 43%; }
+
+.right-gutter {
+  padding-right: 1.25em; }
 
 @media (max-width: 800px) {
   .columns {
@@ -664,7 +689,7 @@ section {
   border: 2px solid #FFFFFF;
   font-weight: bold;
   font-size: 0.75em;
-  padding: 0.35em 0.9em;
+  padding: 0.27em 0.7em;
   -moz-border-radius: 35px;
   -webkit-border-radius: 35px;
   border-radius: 35px; }
@@ -1144,10 +1169,26 @@ footer, .full-menu-modal .top-content {
     display: table-cell;
     height: 100%;
     float: initial; }
+  .hypothesis-modal .input-text {
+    height: 160px;
+    font-family: "PT Serif", serif;
+    color: #29244E; }
+    .hypothesis-modal .input-text::-webkit-input-placeholder {
+      color: rgba(41, 36, 78, 0.4); }
+    .hypothesis-modal .input-text::-moz-placeholder {
+      color: rgba(41, 36, 78, 0.4); }
+    .hypothesis-modal .input-text:-ms-input-placeholder {
+      color: rgba(41, 36, 78, 0.4); }
+    .hypothesis-modal .input-text:-moz-placeholder {
+      color: rgba(41, 36, 78, 0.4); }
+  .hypothesis-modal .hypothesis-quiz-wrap {
+    height: 270px;
+    overflow: hidden; }
+  .hypothesis-modal .hypothesis-wrap.mCS_no_scrollbar {
+    width: 370px; }
   .hypothesis-modal .hypothesis-wrap {
     height: 340px;
-    overflow: hidden;
-    width: 370px; }
+    overflow: hidden; }
   .hypothesis-modal ul.specs-tabs {
     height: 42px; }
     .hypothesis-modal ul.specs-tabs li {
@@ -1205,6 +1246,25 @@ footer, .full-menu-modal .top-content {
     -webkit-border-radius: 1.5em;
     border-radius: 1.5em;
     width: 1.5em; }
+
+.hypothesis-author-field .author {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 10px; }
+.hypothesis-author-field .author p {
+  padding-left: 10px;
+  display: inline-block; }
+.hypothesis-author-field .profile {
+  display: inline-block;
+  vertical-align: top;
+  height: 1.5em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -moz-border-radius: 1.5em;
+  -webkit-border-radius: 1.5em;
+  border-radius: 1.5em;
+  width: 1.5em; }
 
 .hypothesis-chat-wrap {
   height: 352px;
