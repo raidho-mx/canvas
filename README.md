@@ -22,3 +22,11 @@ Sign Up: http://testbed.raidho.mx/canvas/sign-up.html
 Add hypothesis (Provisional): http://testbed.raidho.mx/canvas/pop-ups.html
 
 Canvas Grid http://testbed.raidho.mx/canvas/dashboard.html
+
+Interview: http://testbed.raidho.mx/canvas/interview.html
+
+Interview Full View: http://testbed.raidho.mx/canvas/interview-full.html
+
+Interview Empty View: http://testbed.raidho.mx/canvas/interview-empty.html
+
+Tooltip Alert Types: http://testbed.raidho.mx/canvas/alert-types.html
