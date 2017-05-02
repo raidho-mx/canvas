@@ -2565,6 +2565,7 @@ ul.color-picker-list {
   position: relative;
   width: 600px;
   min-height: 500px;
+  background-color: #FFFFFF;
   background-size: initial;
   background-repeat: no-repeat;
   background-position: top left;
