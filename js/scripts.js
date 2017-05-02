@@ -60,3 +60,9 @@ $('.canvas-progress-assistant .question-mark-btn').click(function(){
 	$('.main-content-block').removeClass('show');
 	$('.trigger-assistant-status').removeClass('hide');
 });
+
+
+// TAGS
+$(function() {
+	$('.tags_1').tagsInput({width:'auto'});
+});

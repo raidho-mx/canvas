@@ -393,6 +393,14 @@ input[type="submit"].login-btn {
     .green-radio-input + p {
       max-width: 290px; } }
 
+.bg-purple-radio-input input {
+  background: #E8E5FF;
+  left: 3px;
+  top: 3px;
+  position: relative;
+  height: 16px;
+  width: 16px; }
+
 @media (max-width: 800px) {
   .submit-wrapper {
     display: inline-block;
@@ -431,6 +439,45 @@ input[type="submit"].login-btn {
   @media (min-width: 800px) {
     .login-profile {
       margin-top: 1.6em; } }
+
+.small-canvas-grid {
+  display: block;
+  margin: 0 auto;
+  width: 160px; }
+  .small-canvas-grid .col {
+    cursor: pointer;
+    background: #F0F0F0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    float: left;
+    height: 29px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    vertical-align: top;
+    width: 32px; }
+  .small-canvas-grid .col.active {
+    background: #009FFF; }
+    .small-canvas-grid .col.active p {
+      color: #FFFFFF; }
+  .small-canvas-grid .col-x2 {
+    float: left;
+    height: 60px;
+    vertical-align: top;
+    width: 34px; }
+    .small-canvas-grid .col-x2 p {
+      top: 23px; }
+  .small-canvas-grid .col-x1 p, .small-canvas-grid .col-vertical p {
+    top: 5px; }
+  .small-canvas-grid .col-vertical {
+    width: 68px; }
+  .small-canvas-grid p {
+    color: rgba(41, 36, 78, 0.4);
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    position: relative; }
 
 /*GRID */
 section {
@@ -481,6 +528,9 @@ section {
   @media (min-width: 800px) {
     .mb40 {
       margin-bottom: 2.5em; } }
+
+.mb10 {
+  margin-bottom: 10px; }
 
 .mr10 {
   margin-right: 10px; }
@@ -2469,3 +2519,102 @@ ul.color-picker-list {
 
 .insight-block.bg-light-red {
   border: 3px solid #FC035E; }
+
+.key-insight-modal {
+  -moz-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+  background: #FFFFFF;
+  padding: 40px;
+  width: 586px; }
+  .key-insight-modal .blue-btn {
+    padding: 1em 1.5em;
+    min-width: 203px; }
+  .key-insight-modal .input-x1.active, .key-insight-modal textarea.active {
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border: 3px solid #009FFF; }
+  .key-insight-modal select.active {
+    color: #009FFF;
+    border: 3px solid #F0F0F0 !important;
+    font-weight: bold; }
+
+.key-insight-modal:before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  border-bottom-width: 10px;
+  border-top-width: 10px;
+  border-left-width: 20px;
+  box-shadow: 4px 5px 14px -4px rgba(0, 0, 0, 0.2);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  width: 20px;
+  z-index: 1;
+  min-height: 20px;
+  background: #FFFFFF; }
+
+.add-collaborator-modal {
+  padding: 50px;
+  display: inline-block;
+  position: relative;
+  width: 600px;
+  min-height: 500px;
+  background-size: initial;
+  background-repeat: no-repeat;
+  background-position: top left;
+  -moz-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2); }
+  .add-collaborator-modal .scroll-content {
+    height: 130px; }
+
+.tagsinput {
+  background: #FFFFFF;
+  border: 3px solid #F0F0F0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 0.7em 1.5em; }
+  .tagsinput .close-tag {
+    color: #FFFFFF; }
+  .tagsinput input.add-tag {
+    border: none;
+    padding: 0;
+    color: rgba(41, 36, 78, 0.4) !important;
+    display: inline-block;
+    width: 258px !important; }
+  .tagsinput > div, .tagsinput .tag {
+    width: auto !important;
+    display: inline-block; }
+  .tagsinput .tag {
+    color: #FFFFFF;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: #11C26F;
+    margin-right: 10px;
+    padding: 7px 10px; }
+
+.profile-thumb .img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-right: 20px;
+  height: 50px;
+  width: 50px; }
+.profile-thumb .txt {
+  vertical-align: top;
+  color: #29244E;
+  display: inline-block; }
