@@ -76,12 +76,14 @@ input[type="password"],
 textarea {
 	outline:0;
 	appearance: none;
+	padding: 0;
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	border: none;
 	border-radius: 0;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
+	margin: 0;
 }
 
 button {

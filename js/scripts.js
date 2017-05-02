@@ -37,22 +37,26 @@ $(".circle-progress-bar").each(function(){
 });
 
 
+
 // FIX FOOTER TO BOTTOM: ADD PADDING ON .MAIN-CONTENT
+var footerHeight = $('footer').outerHeight();
+$('.main-content').css({'padding-bottom' : footerHeight});
 $(window).resize(function() {
 	var footerHeight = $('footer').outerHeight();
 	$('.main-content').css({'padding-bottom' : footerHeight});
 });
 
-
 // SHOW ASSITANT STATUS
 $('.trigger-assistant-status .question-mark-btn').click(function(){
 	$('.canvas-progress-assistant').addClass('show');
 	$('.canvas-grid').addClass('show');
+	$('.main-content-block').addClass('show');
 	$('.trigger-assistant-status').addClass('hide');
 });
 
 $('.canvas-progress-assistant .question-mark-btn').click(function(){
 	$('.canvas-progress-assistant').removeClass('show');
 	$('.canvas-grid').removeClass('show');
+	$('.main-content-block').removeClass('show');
 	$('.trigger-assistant-status').removeClass('hide');
 });
