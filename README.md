@@ -38,3 +38,7 @@ All Cohorts full view: http://testbed.raidho.mx/canvas/cohort-full.html
 Cohort Projects empty view: http://testbed.raidho.mx/canvas/cohort-project-empty.html
 
 Cohort Projects Full view: http://testbed.raidho.mx/canvas/cohort-project-full.html
+
+### Profile
+
+Profile Full view: http://testbed.raidho.mx/canvas/profile-full.html
