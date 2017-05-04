@@ -118,6 +118,10 @@ h3 {
   min-height: 100%;
   position: relative; }
 
+.txt18 {
+  font-size: 18px;
+  line-height: 24px; }
+
 .txt14 {
   font-size: 14px;
   line-height: 20px; }
@@ -649,6 +653,15 @@ section {
     .one-fourth {
       width: 25%;
       padding-bottom: 2.5em; } }
+
+.one-three-col {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 100%; }
+  @media (min-width: 800px) {
+    .one-three-col {
+      width: 33%; } }
 
 .three-col {
   display: inline-block;
@@ -1528,6 +1541,37 @@ section {
   .wysiwyg-bar .btn-bullet-list {
     background: url("../img/wisiwig-tools2.png") no-repeat -50px; }
 
+.progress-bar-dots .txt14 span {
+  margin-right: 10px; }
+.progress-bar-dots .dot {
+  display: inline-block;
+  margin-right: 5px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background: rgba(41, 36, 78, 0.4);
+  height: 8px;
+  width: 8px; }
+.progress-bar-dots .dot.bg-green {
+  background: #11C26F !important; }
+
+.progress-bar-x1 {
+  height: 8px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 3px;
+  position: relative;
+  width: 100%; }
+  .progress-bar-x1 .bg-green {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    height: 8px;
+    left: 0;
+    top: 0;
+    position: absolute; }
+
 .bg-gray-line {
   position: relative; }
   .bg-gray-line:after {
@@ -1779,7 +1823,7 @@ header {
       top: -8px; } }
 
 header.mentor-header .profile-btn {
-  padding-right: 20px;
+  padding-right: 80px;
   width: auto; }
 header.mentor-header .profile-btn .txt {
   padding-right: 1em;
