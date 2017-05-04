@@ -23,8 +23,18 @@ Add hypothesis (Provisional): http://testbed.raidho.mx/canvas/pop-ups.html
 
 Canvas Grid http://testbed.raidho.mx/canvas/dashboard.html
 
+### Interview
 Interview Full View: http://testbed.raidho.mx/canvas/interview-full.html
 
 Interview Empty View: http://testbed.raidho.mx/canvas/interview-empty.html
 
 Tooltip Alert Types: http://testbed.raidho.mx/canvas/alert-types.html
+
+### Cohorts
+All Cohorts empty view: http://testbed.raidho.mx/canvas/cohort-empty.html
+
+All Cohorts full view: http://testbed.raidho.mx/canvas/cohort-full.html
+
+Cohort Projects empty view: http://testbed.raidho.mx/canvas/cohort-project-empty.html
+
+Cohort Projects Full view: http://testbed.raidho.mx/canvas/cohort-project-full.html
