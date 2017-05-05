@@ -239,7 +239,6 @@ h3 {
     color: rgba(41, 36, 78, 0.4);
     font-family: "Open Sans", sans-serif;
     font-size: 10px;
-    min-width: 120px;
     position: absolute;
     left: 15px;
     padding: 3px;
@@ -247,16 +246,21 @@ h3 {
 
 .small-input {
   max-width: 90px;
-  display: inline-block !important; }
+  display: inline-block !important;
+  width: 100%; }
 
 .small-input.m-right {
   margin-right: 1em !important; }
 
 .med-input {
-  width: 40% !important;
   margin-right: 1em !important;
   position: relative;
-  display: inline-block !important; }
+  display: inline-block !important;
+  margin-bottom: 20px; }
+  @media (min-width: 800px) {
+    .med-input {
+      width: 40% !important;
+      margin-bottom: 0; } }
 
 label {
   display: block;
