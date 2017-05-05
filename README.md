@@ -42,3 +42,5 @@ Cohort Projects Full view: http://testbed.raidho.mx/canvas/cohort-project-full.h
 ### Profile
 
 Profile Full view: http://testbed.raidho.mx/canvas/profile-full.html
+
+Profile Empty view: http://localhost:8888/canvas/profile-empty.html
