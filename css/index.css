@@ -3068,9 +3068,10 @@ ul.color-picker-list {
     margin-bottom: 7px; }
   .add-collaborator-modal h2 {
     margin-bottom: 30px; }
-  .add-collaborator-modal button.green-btn,
-  .add-collaborator-modal button.purple-opacity-border-btn {
-    min-width: 200px; }
+  .add-collaborator-modal .input-x1 {
+    font-size: 14px;
+    color: #29244E;
+    padding: 13px 11px !important; }
 
 .add-new-cohort-modal {
   color: #29244E;
