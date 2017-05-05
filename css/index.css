@@ -224,8 +224,16 @@ h3 {
 .txt-top {
   vertical-align: text-top; }
 
+.label-wrap.add-btn input {
+  display: inline-block;
+  width: 80%;
+  margin-right: 2%; }
+.label-wrap.add-btn button {
+  display: inline-block; }
+
 .label-wrap {
-  position: relative; }
+  position: relative;
+  margin-top: 10px; }
   .label-wrap label {
     background-color: #FFFFFF;
     color: rgba(41, 36, 78, 0.4);
@@ -236,6 +244,19 @@ h3 {
     left: 15px;
     padding: 3px;
     top: -11px; }
+
+.small-input {
+  max-width: 90px;
+  display: inline-block !important; }
+
+.small-input.m-right {
+  margin-right: 1em !important; }
+
+.med-input {
+  width: 40% !important;
+  margin-right: 1em !important;
+  position: relative;
+  display: inline-block !important; }
 
 label {
   display: block;
@@ -283,6 +304,37 @@ input.serif, select.serif, textarea.serif {
 
 select {
   background: url("../img/select-down.png") right no-repeat; }
+
+.select-input {
+  background: url("../img/select-down.png") right no-repeat; }
+
+.dropdown-select-input {
+  visibility: hidden;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  top: 36px;
+  height: 230px;
+  background: #FFFFFF;
+  border-left: 3px solid #F0F0F0;
+  border-right: 3px solid #F0F0F0;
+  border-bottom: 3px solid #F0F0F0;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 100%;
+  z-index: 3; }
+  .dropdown-select-input .scroll-content {
+    height: 220px; }
+  .dropdown-select-input ul {
+    padding-left: 10px; }
+
+.dropdown-select-input.active {
+  visibility: visible;
+  opacity: 1; }
 
 textarea,
 select,
@@ -1366,6 +1418,7 @@ section {
   height: 20px;
   line-height: 0;
   font-size: 24px;
+  position: relative;
   font-weight: bold;
   text-align: center;
   -moz-transition: ease 0.3s;
@@ -1545,13 +1598,13 @@ section {
   margin-right: 10px; }
 .progress-bar-dots .dot {
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 3px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
   background: rgba(41, 36, 78, 0.4);
-  height: 8px;
-  width: 8px; }
+  height: 7px;
+  width: 7px; }
 .progress-bar-dots .dot.bg-green {
   background: #11C26F !important; }
 
