@@ -262,6 +262,11 @@ h3 {
       width: 40% !important;
       margin-bottom: 0; } }
 
+@media (min-width: 800px) {
+  .med-input-x1 {
+    width: 60% !important;
+    margin-bottom: 0; } }
+
 label {
   display: block;
   font-family: "PT Serif", serif;
@@ -835,11 +840,17 @@ section {
 .p-btn {
   padding: 1em 1.5em; }
 
+.purple-opacity-border-btn {
+  border: 2px solid rgba(41, 36, 78, 0.4);
+  color: rgba(41, 36, 78, 0.4);
+  font-weight: bold;
+  padding: 1em 1.5em; }
+
 .gray-border-btn {
   border: 3px solid #F0F0F0;
   color: #F0F0F0;
   font-weight: bold;
-  padding: 0.7em 1.5em;
+  padding: 1em 1.5em;
   -moz-transition: ease 0.3s;
   -o-transition: ease 0.3s;
   -webkit-transition: ease 0.3s;
@@ -1152,10 +1163,10 @@ section {
   .up-arrow-btn:before {
     content: "";
     border-left: 8px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 8px solid #29244E;
+    border-right: 8px solid transparent;
+    border-bottom: 11px solid #29244E;
     position: absolute;
-    left: 7px;
+    left: 5px;
     top: 6px; }
 
 .down-arrow-btn {
@@ -3043,11 +3054,23 @@ ul.color-picker-list {
   background-size: initial;
   background-repeat: no-repeat;
   background-position: top left;
+  color: #29244E;
   -moz-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2); }
   .add-collaborator-modal .scroll-content {
     height: 130px; }
+  .add-collaborator-modal .tagsinput {
+    padding-bottom: 0; }
+  .add-collaborator-modal .tagsinput > div {
+    padding-bottom: 10px; }
+  .add-collaborator-modal .tagsinput .tag {
+    margin-bottom: 7px; }
+  .add-collaborator-modal h2 {
+    margin-bottom: 30px; }
+  .add-collaborator-modal button.green-btn,
+  .add-collaborator-modal button.purple-opacity-border-btn {
+    min-width: 200px; }
 
 .add-new-cohort-modal {
   color: #29244E;
@@ -3066,4 +3089,33 @@ ul.color-picker-list {
   .add-new-cohort-modal h2 {
     margin-bottom: 20px; }
   .add-new-cohort-modal button.green-btn {
+    min-width: 200px; }
+
+.add-new-project-modal {
+  color: #29244E;
+  background: #FFFFFF;
+  padding: 35px 45px 45px 45px;
+  position: relative;
+  -moz-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+  width: 590px; }
+  .add-new-project-modal textarea {
+    height: 110px; }
+  .add-new-project-modal .input-x1, .add-new-project-modal .tagsinput {
+    font-size: 14px;
+    color: #29244E;
+    padding: 13px 11px !important; }
+  .add-new-project-modal .tagsinput {
+    padding-bottom: 0 !important; }
+  .add-new-project-modal .tagsinput > div {
+    padding-bottom: 13px; }
+  .add-new-project-modal .tagsinput .tag {
+    top: -3px;
+    margin-bottom: 5px;
+    position: relative; }
+  .add-new-project-modal h2 {
+    margin-bottom: 30px; }
+  .add-new-project-modal button.green-btn,
+  .add-new-project-modal button.purple-opacity-border-btn {
     min-width: 200px; }
