@@ -24,6 +24,7 @@ Add hypothesis (Provisional): http://testbed.raidho.mx/canvas/pop-ups.html
 Canvas Grid http://testbed.raidho.mx/canvas/dashboard.html
 
 ### Interview
+
 Interview Full View: http://testbed.raidho.mx/canvas/interview-full.html
 
 Interview Empty View: http://testbed.raidho.mx/canvas/interview-empty.html
@@ -31,6 +32,7 @@ Interview Empty View: http://testbed.raidho.mx/canvas/interview-empty.html
 Tooltip Alert Types: http://testbed.raidho.mx/canvas/alert-types.html
 
 ### Cohorts
+
 All Cohorts empty view: http://testbed.raidho.mx/canvas/cohort-empty.html
 
 All Cohorts full view: http://testbed.raidho.mx/canvas/cohort-full.html
@@ -43,4 +45,12 @@ Cohort Projects Full view: http://testbed.raidho.mx/canvas/cohort-project-full.h
 
 Profile Full view: http://testbed.raidho.mx/canvas/profile-full.html
 
-Profile Empty view: http://localhost:8888/canvas/profile-empty.html
+Profile Empty view: http://testbed.raidho.mx/canvas/profile-empty.html
+
+### Users Recent Activity
+
+Recent Activity view: http://testbed.raidho.mx/canvas/recent-activity.html
+
+### Canvas Mentor View
+
+Canvas Mentor view: http://testbed.raidho.mx/canvas/canvas-mentor.html
