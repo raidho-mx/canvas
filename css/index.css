@@ -5,6 +5,9 @@
 .c-gray {
   color: #A7A7A7; }
 
+.c-dark-gray {
+  color: #4A4A4A; }
+
 .bg-red {
   background: #E95454; }
 
@@ -173,6 +176,9 @@ h3 {
   opacity: 0.9;
   width: 100%; }
 
+.inline {
+  display: inline-block; }
+
 .f-left {
   float: left; }
 
@@ -224,6 +230,9 @@ h3 {
 .txt-top {
   vertical-align: text-top; }
 
+.border-bottom {
+  border-bottom: 1px solid #F0F0F0; }
+
 .label-wrap.add-btn input {
   display: inline-block;
   width: 80%;
@@ -266,6 +275,11 @@ h3 {
   .med-input-x1 {
     width: 60% !important;
     margin-bottom: 0; } }
+
+.input-x2 {
+  display: inline-block;
+  max-width: 200px;
+  width: 100%; }
 
 label {
   display: block;
@@ -663,6 +677,9 @@ section {
 
 .pl20 {
   padding-left: 20px; }
+
+.ptb {
+  padding: 16px 0; }
 
 .ptrl24 {
   padding: 1.5em 1.5em 0 1.5em; }
@@ -2713,6 +2730,11 @@ footer, .full-menu-modal .top-content {
   height: 50px;
   width: 50px; }
 .profile-thumb .txt {
+  vertical-align: top;
+  color: #29244E;
+  display: inline-block; }
+.profile-thumb .txt-middle {
+  margin-top: 10px;
   vertical-align: top;
   color: #29244E;
   display: inline-block; }
