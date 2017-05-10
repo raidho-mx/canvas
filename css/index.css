@@ -62,7 +62,7 @@
 .c-red, .invalid {
   color: #FC035E !important; }
 
-.c-green, .new-element {
+.c-green, .new-element, .success {
   color: #11C26F !important; }
 
 .c-soft-orange {
@@ -454,6 +454,18 @@ input[type="submit"].login-btn {
     border: 3px solid #32D59A;
     background: #32D59A;
     color: #FFFFFF; }
+
+.input.invalid {
+  color: #29244E !important;
+  border: 2px solid #FC035E !important; }
+
+.input.success {
+  color: #29244E !important;
+  border: 2px solid #11C26F !important; }
+
+.help {
+  font-size: 14px;
+  margin-top: 5px; }
 
 .green-radio-input {
   display: inline-block;
@@ -2002,7 +2014,7 @@ footer {
 footer.mentor-footer .progress-bar-wrap {
   padding-top: 0; }
 footer.mentor-footer .wrap {
-  padding-top: 40px; }
+  padding-top: 30px; }
 @media (max-width: 800px) {
   footer.mentor-footer .up-arrow-btn {
     display: block;
