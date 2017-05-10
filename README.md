@@ -51,6 +51,12 @@ Profile Empty view: http://testbed.raidho.mx/canvas/profile-empty.html
 
 Recent Activity view: http://testbed.raidho.mx/canvas/recent-activity.html
 
-### Canvas Mentor View
+### Canvas Grid (Mentor)
 
 Canvas Mentor view: http://testbed.raidho.mx/canvas/canvas-mentor.html
+
+### Project View (Mentor)
+
+Project single full view: http://testbed.raidho.mx/canvas/project-single-view.html
+
+Project single empty view: http://testbed.raidho.mx/canvas/project-single-view-empty.html
