@@ -206,6 +206,9 @@ h3 {
   bottom: 0;
   left: 0; }
 
+.align-top {
+  vertical-align: top !important; }
+
 .align-middle {
   vertical-align: middle !important; }
 
@@ -282,6 +285,11 @@ h3 {
 .input-x2 {
   display: inline-block;
   max-width: 200px;
+  width: 100%; }
+
+.size-x3 {
+  display: inline-block;
+  max-width: 254px;
   width: 100%; }
 
 label {
@@ -680,6 +688,9 @@ section {
 
 .mb10 {
   margin-bottom: 10px; }
+
+.mtb10 {
+  margin: 10px 0; }
 
 .mr10 {
   margin-right: 10px; }
