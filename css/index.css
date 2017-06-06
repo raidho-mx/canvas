@@ -249,7 +249,7 @@ h3 {
 .label-wrap {
   position: relative;
   margin-top: 10px; }
-  .label-wrap label {
+  .label-wrap span {
     background-color: #FFFFFF;
     color: rgba(41, 36, 78, 0.4);
     font-family: "Open Sans", sans-serif;
